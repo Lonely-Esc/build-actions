@@ -6,7 +6,7 @@
 # 修改IP项的EOF于EOF之间请不要插入其他扩展代码，可以删除或注释里面原本的代码
 
 #添加bypass插件
-svn co https://github.com/waynesg/OpenWrt-Software/trunk/luci-app-bypass
+svn co https://github.com/waynesg/OpenWrt-Software/trunk/luci-app-bypass package/luci-app-bypass
 
 cat >$NETIP <<-EOF
 uci set network.lan.ipaddr='10.10.10.252'                     # IPv4 地址(openwrt后台地址)
